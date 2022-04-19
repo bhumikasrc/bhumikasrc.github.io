@@ -2,7 +2,6 @@
 //replay;
 var margin = {top: 10, right: 30, bottom: 40, left: 210},
     width = 250,
-    //width = 470
     height = 500 +50;
 
 // append the svg object to the body of the page
@@ -16,11 +15,6 @@ var svg0 = d3.select("#lollipop")
 
 // Parse the Data
 d3.csv("https://gist.githubusercontent.com/bhumikasrc/df862b3cffcb833e5a80d9042286432a/raw/5bcf366ebdde4015eaf5143eff08ebf36aec6784/sizes.csv", function(data) {
-
-// sort data
-    data.sort(function(b, a) {
-        return a.CaffeineT - b.CaffeineT;
-    });
 
 // Add X axis
     var x = d3.scaleLinear()
@@ -114,15 +108,6 @@ d3.csv("https://gist.githubusercontent.com/bhumikasrc/df862b3cffcb833e5a80d90422
         .text("DAILY MAX CAFFEINE BY FDA")
         .style("font-size", "10px")
 
-    // svg.append("line")                  // attach a line
-    //     .style("stroke", "black")          // colour the line
-    //     .style("stroke-width", 50)         // adjust line width
-    //     .style("stroke-linecap", "butt")  // stroke-linecap type
-    //     .attr("x1", 40)     // x position of the first end of the line
-    //     .attr("y1", -20)     // y position of the first end of the line
-    //     .attr("x2", 170)     // x position of the second end of the line
-    //     .attr("y2", -20);
-
     svg0.append("text")
         .style("text-anchor", "end")
         .attr("dx", "13em")
@@ -176,11 +161,6 @@ var svg1 = d3.select("#lollipop")
         "translate(" + margin.left + "," + margin.top + ")");
 
 d3.csv("https://gist.githubusercontent.com/bhumikasrc/df862b3cffcb833e5a80d9042286432a/raw/5bcf366ebdde4015eaf5143eff08ebf36aec6784/sizes.csv", function(data) {
-
-// sort data
-    data.sort(function(b, a) {
-        return a.CaffeineG - b.CaffeineG;
-    });
 
 // Add X axis
     var x = d3.scaleLinear()
@@ -326,11 +306,6 @@ var svg2 = d3.select("#lollipop")
         "translate(" + 10 + "," + 10 + ")");
 
 d3.csv("https://gist.githubusercontent.com/bhumikasrc/df862b3cffcb833e5a80d9042286432a/raw/5bcf366ebdde4015eaf5143eff08ebf36aec6784/sizes.csv", function(data) {
-
-// sort data
-    data.sort(function(b, a) {
-        return a.CaffeineV - b.CaffeineV;
-    });
 
 // Add X axis
     var x = d3.scaleLinear()

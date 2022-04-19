@@ -110,10 +110,10 @@ var dim = d3.min([window.innerWidth * .9, window.innerHeight * .9]);
 var width = dim - margin.left - margin.right, height = dim - margin.top - margin.bottom;
 
 var svg = d3.select("#grid").append("svg")
-    .attr("width", 900)
+    .attr("width", 1500)
     .attr("height", 800)
     .append("g")
-    .attr("transform", "translate(" + 100 + ", " + 20 + ")");
+    .attr("transform", "translate(" + 750 + ", " + 100 + ")");
 
 var padding = .1;
 
