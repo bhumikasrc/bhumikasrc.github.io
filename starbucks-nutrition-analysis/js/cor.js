@@ -104,16 +104,18 @@ var grid = data2grid.grid(corr);
 var rows = d3.max(grid, function(d){ return d.row; });
 
 var margin = {top: 20, bottom: 1, left: 20, right: 1};
+var width1 = 650
+var height1 = 650
 
 var dim = d3.min([window.innerWidth * .9, window.innerHeight * .9]);
 
-var width = dim - margin.left - margin.right, height = dim - margin.top - margin.bottom;
+var width = width1 - margin.left - margin.right, height = height1 - margin.top - margin.bottom;
 
 var svg = d3.select("#grid").append("svg")
     .attr("width", 1500)
-    .attr("height", 800)
+    .attr("height", 1200)
     .append("g")
-    .attr("transform", "translate(" + 750 + ", " + 100 + ")");
+    .attr("transform", "translate(" + 400 + ", " + 270 + ")");
 
 var padding = .1;
 
@@ -255,6 +257,12 @@ svg.append("text")
     .attr("x", 585)
     .attr("y", 680)
     .attr("font-size" , "13px")
+
+// svg.append("text")
+//     .text("Coming from India, I've never seen so many people \n enthusiastic about Starbucks. However, in San Francisco and the United States in general, Starbucks is the  majority of the population's survival kit. We all consume food and beverages, but relatively few of us are aware of what we are eating or drinking. I'll be undertaking a nutritional analysis of the food and drinks available at Starbucks as part of the project. By Bhumika Srinivas")
+//     .attr("x", -500)
+//     .attr("y", 60)
+//     .attr("font-size" , "53px")
 
     //.attr("x", function(d){ return width * d.offset; })
     //.attr("dy", -3)

@@ -51,12 +51,12 @@ let grid2 = () =>{
 
         //color scale
         var myColor = d3.scaleLinear()
-            .range(["#228B22", "#6E260E"])
+            .range(["#4CBB17","#6E260E"])
             .domain([10,190])
 
         //size scale
         var size = d3.scaleLinear()
-            .range([2, 7])
+            .range([2, 8])
             .domain([0, 77]);
 
 
@@ -79,7 +79,7 @@ let grid2 = () =>{
             .append("circle")
             .attr("cx", x(0) )
             .attr("cy", function(d) { return y(d.ProductName); })
-            .attr("r", "7")
+            .attr("r", "8")
             .style("fill", "white")
             .attr("stroke", "black")
 
@@ -209,12 +209,12 @@ let divide = () =>{
 
         //color scale
         var myColor = d3.scaleLinear()
-            .range(["#228B22", "#6E260E"])
+            .range(["#4CBB17","#6E260E"])
             .domain([10,190])
 
         //size scale
         var size = d3.scaleLinear()
-            .range([2, 7])
+            .range([2, 8])
             .domain([0, 77]);
 
 
@@ -235,7 +235,7 @@ let divide = () =>{
             .append("circle")
             .attr("cx", x(0) )
             .attr("cy", function(d) { return y(d.ProductName); })
-            .attr("r", "7")
+            .attr("r", "8")
             .style("fill", "white")
             .attr("stroke", "black")
 
@@ -329,12 +329,12 @@ let barChart = () => {
 
         //color scale
         var myColor = d3.scaleLinear()
-            .range(["#228B22", "#6E260E"])
+            .range(["#4CBB17","#6E260E"])
             .domain([10,190])
 
         //size scale
         var size = d3.scaleLinear()
-            .range([2, 7])
+            .range([2, 8])
             .domain([0, 77]);
 
 
@@ -355,7 +355,7 @@ let barChart = () => {
             .append("circle")
             .attr("cx", x(0) )
             .attr("cy", function(d) { return y(d.ProductName); })
-            .attr("r", "7")
+            .attr("r", "8")
             .style("fill", "white")
             .attr("stroke", "black")
 
@@ -441,7 +441,6 @@ function scroll(n, offset, func1, func2){
         offset: offset
     });
 };
-
 
 
 //triger these functions on page scroll

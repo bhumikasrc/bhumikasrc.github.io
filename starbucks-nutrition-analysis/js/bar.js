@@ -5,7 +5,7 @@
 
 var margin = {top: 30, right: 30, bottom: 60, left: 280},
     width = 250,
-    height = 500 +50;
+    height = 500+50;
 
 // append the svg object to the body of the page
 var svga = d3.select("#bar")
@@ -14,7 +14,7 @@ var svga = d3.select("#bar")
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform",
-        "translate(" + margin.left + "," + margin.top + ")");
+        "translate(" + margin.left + "," + (margin.top) + ")");
 
 // Parse the Data
 d3.csv("https://gist.githubusercontent.com/bhumikasrc/5fdac138adf01692d27c75e78d806102/raw/470f0f27338425d02cd41cefeee48b19b988e82c/food.csv", function(data) {
@@ -102,7 +102,7 @@ d3.csv("https://gist.githubusercontent.com/bhumikasrc/5fdac138adf01692d27c75e78d
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x).ticks(5))
         .selectAll("text")
-        .attr("transform", "translate(7,0)")
+        .attr("transform", "translate(5,0)")
         .style("text-anchor", "end");
 
 // Y axis
@@ -179,7 +179,7 @@ var svgc = d3.select("#bar")
     .attr("height", 700)
     .append("g")
     .attr("transform",
-        "translate(" + 10 + "," + 90 + ")");
+        "translate(" + 0 + "," + 90 + ")");
 
 d3.csv("https://gist.githubusercontent.com/bhumikasrc/5fdac138adf01692d27c75e78d806102/raw/470f0f27338425d02cd41cefeee48b19b988e82c/food.csv", function(data) {
 
@@ -191,7 +191,7 @@ d3.csv("https://gist.githubusercontent.com/bhumikasrc/5fdac138adf01692d27c75e78d
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x).ticks(5))
         .selectAll("text")
-        .attr("transform", "translate(7,0)")
+        .attr("transform", "translate(5,0)")
         .style("text-anchor", "end");
 
 // Y axis
