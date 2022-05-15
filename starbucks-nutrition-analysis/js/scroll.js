@@ -444,13 +444,13 @@ function scroll(n, offset, func1, func2){
 
 
 //triger these functions on page scroll
-new scroll('div2', '500', grid2, grid1);
-new scroll('div4', '500', divide, grid2);
+new scroll('div2', '500', divide, grid2);
+// new scroll('div4', '500', divide, grid2);
 new scroll('div6', '500', barChart, divide);
 
 
 
 //start grid on page load
-grid1();
+grid2();
 
 

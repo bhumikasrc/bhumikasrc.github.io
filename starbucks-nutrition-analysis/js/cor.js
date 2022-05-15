@@ -113,9 +113,9 @@ var width = width1 - margin.left - margin.right, height = height1 - margin.top -
 
 var svg = d3.select("#grid").append("svg")
     .attr("width", 1500)
-    .attr("height", 1200)
+    .attr("height", 700)
     .append("g")
-    .attr("transform", "translate(" + 400 + ", " + 270 + ")");
+    .attr("transform", "translate(" + 200 + ", " + 20 + ")");
 
 var padding = .1;
 
