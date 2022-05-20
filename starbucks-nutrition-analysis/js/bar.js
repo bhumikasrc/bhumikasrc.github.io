@@ -1,7 +1,4 @@
 // set the dimensions and margins of the graph
-// var margin = {top: 20, right: 30, bottom: 40, left: 90},
-// width = 460 - margin.left - margin.right,
-// height = 400 - margin.top - margin.bottom;
 
 var margin = {top: 30, right: 30, bottom: 60, left: 280},
     width = 250,
@@ -201,8 +198,6 @@ d3.csv("https://gist.githubusercontent.com/bhumikasrc/5fdac138adf01692d27c75e78d
             return d.Food;
         }))
         .padding(.1);
-    // svgb.append("g")
-    //     .call(d3.axisLeft(y))
 
 //Bars
     svgc.selectAll("myRect")

@@ -175,27 +175,6 @@ svg.selectAll("rect")
 d3.selectAll("rect")
     .on("mouseover", function(d){
 
-        // d3.select(this).classed("selected", true);
-        //
-        // d3.select(".tip")
-        //     .style("display", "block")
-        //     .html(d.column_x + ", " + d.column_y + ": " + d.correlation.toFixed(2));
-        //
-        // var row_pos = y(d.row);
-        // var col_pos = x(d.column);
-        // var tip_pos = d3.select(".tip").node().getBoundingClientRect();
-        // var tip_width = tip_pos.width;
-        // var tip_height = tip_pos.height;
-        // var grid_pos = d3.select("#grid").node().getBoundingClientRect();
-        // var grid_left = grid_pos.left;
-        // var grid_top = grid_pos.top;
-        //
-        // var left = grid_left + col_pos + margin.left + (x.bandwidth() / 2) - (tip_width / 2);
-        // var top = grid_top + row_pos + margin.top - tip_height - 5;
-        //
-        // d3.select(".tip")
-        //     .style("left", left + "px")
-        //     .style("top", top + "px");
 
         d3.select(".x.axis .tick:nth-of-type(" + d.column + ") text").classed("selected", true);
         d3.select(".y.axis .tick:nth-of-type(" + d.row + ") text").classed("selected", true);
@@ -257,15 +236,3 @@ svg.append("text")
     .attr("x", 585)
     .attr("y", 680)
     .attr("font-size" , "13px")
-
-// svg.append("text")
-//     .text("Coming from India, I've never seen so many people \n enthusiastic about Starbucks. However, in San Francisco and the United States in general, Starbucks is the  majority of the population's survival kit. We all consume food and beverages, but relatively few of us are aware of what we are eating or drinking. I'll be undertaking a nutritional analysis of the food and drinks available at Starbucks as part of the project. By Bhumika Srinivas")
-//     .attr("x", -500)
-//     .attr("y", 60)
-//     .attr("font-size" , "53px")
-
-    //.attr("x", function(d){ return width * d.offset; })
-    //.attr("dy", -3)
-    //.style("text-anchor", function(d, i){ return i == 0 ? "start" : i == 1 ? "middle" : "end"; })
-
-    //.text(function(d, i){ return d.value.toFixed(2) + (i == 2 ? ">" : ""); })
