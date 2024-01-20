@@ -308,13 +308,13 @@ a img.aligncenter {
 }
 
 .navbar-dark .navbar-nav .nav-link{
-	color: #ffffff;
+	color: #090909;
 	letter-spacing: 1px;
 	font-size: 14px;
 	position: relative;
 }
 .navbar-dark .navbar-nav .nav-link:hover{
-	color: #ffffff;
+	color: #141313;
 }
 .navbar-dark .navbar-nav .nav-link.active{
 	font-weight: 600;
@@ -323,7 +323,7 @@ a img.aligncenter {
     content: '';
     width: 0;
     height: 3px;
-    background: #ffffff;
+    background: #060606;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -447,7 +447,7 @@ xclip
 #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #db8fa9;
+    background-color: #faf7f8;
     opacity: 4;
 }
 
@@ -495,7 +495,7 @@ xclip
 }
 
 .section.db {
-    background-color: #db8fa9;
+    background-color: #f8f6f7;
 }
 
 .section.color1 {
@@ -615,7 +615,7 @@ xclip
 
 .btn-hover-new:hover{
 	color: #ffffff;
-	background-color: #db96ae;
+	background-color: #d6d0d2;
 }
 .btn-hover-new:hover > span {
     opacity: 0;
@@ -2209,7 +2209,7 @@ select.mobile-device {
 
 .copyrights {
     border-top: 1px dashed rgba(255, 255, 255, 0.1);
-    background-color: #db8fa9;
+    background-color: #fbfafa;
     box-sizing: border-box;
     width: 100%;
     text-align: left;
@@ -2307,7 +2307,7 @@ select.mobile-device {
 }
 
 .footer-distributed .footer-company-name a{
-	color: #ffffff;
+	color: #636060;
 }
 
 .footer-distributed .footer-company-name a:hover{
